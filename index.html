@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>numa</title>
 <link rel="icon" type="image/png" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -177,6 +177,11 @@ button,.chip{transition:background-color .15s,color .15s,border-color .15s,opaci
 .guardar,.fab{font-weight:800}
 .fab{box-shadow:0 4px 14px rgba(27,23,19,.28)}
 .seg button[aria-pressed="true"]{font-weight:700}
+/* Sin zoom al tocar rápido */
+html,body,button,input,select,textarea,label,.chip,.tabs,.fab{touch-action:manipulation}
+button,.chip,.tabs,.fab,.nav{-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+input,select,textarea{font-size:16px!important}
+.monto{font-size:34px!important}
 </style>
 </head>
 <body>
